@@ -75,3 +75,11 @@ cat file1 > file2		# file2 passa a ter exatamente o mesmo conteúdo de file1
 # Uma maneira não muito boa de se "deletar" o conteúdo de um arquivo é com rm && touch
 
 sudo rm file && touch file	# Remove file e cria um novo com o mesmo nome
+
+# O comando shred permite deletar arquivos de maneira segura
+
+sudo shred -vzn 0 /dir/file	# Método rápido. Irá sobrescrever file com 0s em uma única iteração
+
+sudo shred -vzn 3 /dir/file	# O processo de "shreding" é repitido 3 vezes usando números aleatórios. Leva 4 vezes mais tempo em relação ao método rápido
+
+# A opção -z acima escreve zeros para esconder o processo de "shreding" no final
