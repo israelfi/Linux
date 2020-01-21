@@ -12,43 +12,4 @@ grep '(coisa)' (arquivo)	# Mostra as ocorrencias de (coisa) ni (arquivo)
 
 ps aux				# lista todos os processos para o standard output
 
-env				# Mostra as variaveis de ambiente
-
-echo $LANG			# variavel que especifica a linguagem do usuario (pt_BR para portugues do Brasil)
-
-# PATH é uma variável que contém de ambiente que contém uma lista de diretórios delimitados por :. É nessa lista que o bash procura o programa para executar quando se digita um comando no shell. Caso apareça o erro "command not found" pode ser que exista um erro com o PATH.
-
-# Variáveis da shell são usadas somente pelo shell. $ DRINK="water". $ echo $DRINK -> water. $ OI="have some $DRINK". $ echo $OI -> have some water
-
-# Variáveis de ambiente são variáveis de shell que foram exportadas, estando acessíveis para os processos filhos. $ export DRINK="water"
-
-unset VARIAVEL			# Retira a variável de ambiente VARIAVEL
-
-export PATH="/path/to/dir:$PATH"	# Adiciona /path/to/dir ao PATH
-
-# Para se referenciar à arquivos na linha de comando, podemos usar os caractéres * e ?. * significa qualquer número de caractéres, incluindo nenhum. ? siginifica qualquer caractére (no caso, apenas um).
-
-mv *.mp3 ~/music		# Move todos os arquivos com a extensão .mp3 do diretório atual para a pasta ~/music
-
-mv ???.mp3 ~/music		# Move todo os arquivos com a extensão .mp3 que apresentam três caractéres no nome para a pasta ~/music
-
-# [...] permite procurar por caractéres esecíficos. *.mp[34] pode ser qualquer arquivo com a extensão .mp3 ou .mp4
-
-# O comando which permite saber qual o diretório do programa sendo executado
-
-which ls			# Fala qual o diretório de ls
-
-# O comando find é usado para procurar arquivos no computador
-
-find . -name "*.mp3"		# Irá mostrar todos os arquivos .mp3 no diretório atual (pode-se trocar . por qualquer diretório desejado)
-
-# O parâmetro -name faz com que a busca seja baseada no nome do arquivo
-
-# É possível procurar somente por arquivos e não diretórios e vice-versa com a opção -type. -type f (arquivos/files) e -type d (diretórios)
-
-find . -type f -name "*user*"	# Mostra todos os arquivos que contém a string "user" no seu nome
-
-find . -type f -size +100M	# Procura por arquivos com pelo menos 100 megas de tamanho
-
-find . -size +100M -exec ls -lh {} \; # A opção -exec diz para find executar um certo comando para cada resultado, trocando {} pelo nome do arquivo. \; informa que o fim do comando a ser executado.
 

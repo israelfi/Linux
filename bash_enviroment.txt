@@ -1,0 +1,13 @@
+env				# Mostra as variaveis de ambiente
+
+echo $LANG			# variavel que especifica a linguagem do usuario (pt_BR para portugues do Brasil)
+
+# PATH é uma variável que contém de ambiente que contém uma lista de diretórios delimitados por :. É nessa lista que o bash procura o programa para executar quando se digita um comando no shell. Caso apareça o erro "command not found" pode ser que exista um erro com o PATH.
+
+# Variáveis da shell são usadas somente pelo shell. $ DRINK="water". $ echo $DRINK -> water. $ OI="have some $DRINK". $ echo $OI -> have some water
+
+# Variáveis de ambiente são variáveis de shell que foram exportadas, estando acessíveis para os processos filhos. $ export DRINK="water"
+
+unset VARIAVEL			# Retira a variável de ambiente VARIAVEL
+
+export PATH="/path/to/dir:$PATH"	# Adiciona /path/to/dir ao PATH
