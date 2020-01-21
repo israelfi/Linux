@@ -1,8 +1,8 @@
-# Purpose
+# My Linux 101
 
 I've created this git repository in order to organize my studies with shell commands. 
 
-# Content
+## Content
 
 In here, you'll find different shell commands that I thought that may be useful. I tried to organize them under labels:
 
@@ -12,6 +12,6 @@ In here, you'll find different shell commands that I thought that may be useful.
 
 Feel free to use them as you want.
 
-# Sources
+## Sources
 
 One of the sources that I used is the [Enki App](https://play.google.com/store/apps/details?id=com.enki.insights&hl).
