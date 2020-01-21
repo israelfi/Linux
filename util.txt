@@ -37,3 +37,18 @@ mv ???.mp3 ~/music		# Move todo os arquivos com a extensão .mp3 que apresentam 
 # O comando which permite saber qual o diretório do programa sendo executado
 
 which ls			# Fala qual o diretório de ls
+
+# O comando find é usado para procurar arquivos no computador
+
+find . -name "*.mp3"		# Irá mostrar todos os arquivos .mp3 no diretório atual (pode-se trocar . por qualquer diretório desejado)
+
+# O parâmetro -name faz com que a busca seja baseada no nome do arquivo
+
+# É possível procurar somente por arquivos e não diretórios e vice-versa com a opção -type. -type f (arquivos/files) e -type d (diretórios)
+
+find . -type f -name "*user*"	# Mostra todos os arquivos que contém a string "user" no seu nome
+
+find . -type f -size +100M	# Procura por arquivos com pelo menos 100 megas de tamanho
+
+find . -size +100M -exec ls -lh {} \; # A opção -exec diz para find executar um certo comando para cada resultado, trocando {} pelo nome do arquivo. \; informa que o fim do comando a ser executado.
+
