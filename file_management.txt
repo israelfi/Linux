@@ -53,3 +53,5 @@ rm -f folder			# Igonora arquivos não exitentes
 rm -r folder			# Remoção recursiva
 
 rm -v folder			# Explica o que está sendo feito
+
+# Hello, World!
