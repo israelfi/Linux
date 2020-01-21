@@ -54,4 +54,24 @@ rm -r folder			# Remoção recursiva
 
 rm -v folder			# Explica o que está sendo feito
 
-# Hello, World!
+touch arquivo			# Altera a data de modificação de arquivo para o momento que o comando foi executado
+
+touch -d "2 hours ago" arquivo	# Configura o arquivo como se tivesse sido modificado duas horas atrás
+
+touch -d "$(date -r file) - 2 hours" file	# Modifica a data de file relativo a modificação atual
+
+# O comando fold permite quebrar as linhas de um texto para um determinado tamanho
+
+fold arquivo			# Quebra de linha a cada 80 caracteres (padrão)
+
+fold -w25 arquivo		# Quebra de linha a cada 25 caractéres
+
+# Um bom método para deletar todo o conteúdo de um arquivo é usando cat /dev/null
+
+cat /dev/null > file		# Deleta o conteúdo de file e ainda preserva as pemissões do arquivo
+
+cat file1 > file2		# file2 passa a ter exatamente o mesmo conteúdo de file1
+
+# Uma maneira não muito boa de se "deletar" o conteúdo de um arquivo é com rm && touch
+
+sudo rm file && touch file	# Remove file e cria um novo com o mesmo nome
