@@ -30,7 +30,7 @@ export PATH="/path/to/dir:$PATH"	# Adiciona /path/to/dir ao PATH
 
 mv *.mp3 ~/music		# Move todos os arquivos com a extensão .mp3 do diretório atual para a pasta ~/music
 
-mv ???.mp3 ~/music		# Movo todo os arquivos com a extensão .mp3 que apresentam três caractéres no nome para a pasta ~/music
+mv ???.mp3 ~/music		# Move todo os arquivos com a extensão .mp3 que apresentam três caractéres no nome para a pasta ~/music
 
 # [...] permite procurar por caractéres esecíficos. *.mp[34] pode ser qualquer arquivo com a extensão .mp3 ou .mp4
 
