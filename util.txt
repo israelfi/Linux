@@ -10,6 +10,14 @@ history | grep (coisa)		# Pesquisa (coisa) no histórico do terminal
 
 grep '(coisa)' (arquivo)	# Mostra as ocorrencias de (coisa) ni (arquivo)
 
-ps aux				# lista todos os processos para o standard output
+ps aux				# Lista todos os processos para o standard output
 
+pushd /dir			# Salva o diretório /dir em uma pilha para que seja possível retornar a ele em qualquer momento
 
+popd				# Retorna para o diretório no topo da pilha
+
+dirs				# Lista os diretórios salvos
+
+dirs -c				# Limpa a pilha
+
+# Para digitar um comando grande, uma ferramenta que pode ser bem útil é Ctrl x+e. O shell irá abrir o editor especificado por $EDITOR e lá você pode fazer o que quiser
