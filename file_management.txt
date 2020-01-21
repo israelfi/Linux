@@ -41,3 +41,15 @@ chmod 700 arquivo		# O propietário do arquivo não tem restrição
 chmod 666 arquivo		# Todos usuários podem ler e escrever
 
 chmod a=rw arquivo		# Igual à linha de cima
+
+rm -r folder			# rm -r remove diretórios não vazios. Isso faz com que todos os arquivos e pastas dentro de folder sejam deletados assim como folder
+
+rm -f(--force) folder		# Deletamento "forçado", não recomendado
+
+# Há três opções para se usar com rm: -f, -r e -v
+
+rm -f folder			# Igonora arquivos não exitentes
+
+rm -r folder			# Remoção recursiva
+
+rm -v folder			# Explica o que está sendo feito
