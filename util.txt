@@ -1,27 +1,39 @@
-ls /dev/char # mostra as portas
+ls /dev/char			# mostra as portas
 
-lsusb # Mostra o nomes dos dispositivos conectados
+lsusb				# Mostra o nomes dos dispositivos conectados
 
-cat /proc/bus/input/devices # Mostra o nomes dos dispositivos conectados
+cat /proc/bus/input/devices	# Mostra o nomes dos dispositivos conectados
 
-sudo jstest /dev/input/js0 # Testa o joystick na porta js0
+sudo jstest /dev/input/js0	# Testa o joystick na porta js0
 
-history | grep (coisa) # Pesquisa (coisa) no histórico do terminal
+history | grep (coisa)		# Pesquisa (coisa) no histórico do terminal
 
-grep '(coisa)' (arquivo) # Mostra as ocorrencias de (coisa) ni (arquivo)
+grep '(coisa)' (arquivo)	# Mostra as ocorrencias de (coisa) ni (arquivo)
 
-ps aux # lista todos os processos para o standard output
+ps aux				# lista todos os processos para o standard output
 
-env # Mostra as variaveis de ambiente
+env				# Mostra as variaveis de ambiente
 
-echo $LANG # variavel que especifica a linguagem do usuario (pt_BR para portugues do Brasil)
+echo $LANG			# variavel que especifica a linguagem do usuario (pt_BR para portugues do Brasil)
 
 # PATH é uma variável que contém de ambiente que contém uma lista de diretórios delimitados por :. É nessa lista que o bash procura o programa para executar quando se digita um comando no shell. Caso apareça o erro "command not found" pode ser que exista um erro com o PATH.
 
 # Variáveis da shell são usadas somente pelo shell. $ DRINK="water". $ echo $DRINK -> water. $ OI="have some $DRINK". $ echo $OI -> have some water
 
-# VAraiáveis de ambiente são variáveis de shell que foram exportadas, estando acessíveis para os processos filhos. $ export DRINK="water"
+# Variáveis de ambiente são variáveis de shell que foram exportadas, estando acessíveis para os processos filhos. $ export DRINK="water"
 
-unset VARIAVEL # Retira a variável de ambiente VARIAVEL
+unset VARIAVEL			# Retira a variável de ambiente VARIAVEL
 
-export PATH="/path/to/dir:$PATH" # Adiciona /path/to/dir ao PATH
+export PATH="/path/to/dir:$PATH"	# Adiciona /path/to/dir ao PATH
+
+# Para se referenciar à arquivos na linha de comando, podemos usar os caractéres * e ?. * significa qualquer número de caractéres, incluindo nenhum. ? siginifica qualquer caractére (no caso, apenas um).
+
+mv *.mp3 ~/music		# Move todos os arquivos com a extensão .mp3 do diretório atual para a pasta ~/music
+
+mv ???.mp3 ~/music		# Movo todo os arquivos com a extensão .mp3 que apresentam três caractéres no nome para a pasta ~/music
+
+# [...] permite procurar por caractéres esecíficos. *.mp[34] pode ser qualquer arquivo com a extensão .mp3 ou .mp4
+
+# O comando which permite saber qual o diretório do programa sendo executado
+
+which ls			# Fala qual o diretório de ls
