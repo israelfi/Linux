@@ -66,6 +66,8 @@ fold arquivo			# Quebra de linha a cada 80 caracteres (padrão)
 
 fold -w25 arquivo		# Quebra de linha a cada 25 caractéres
 
+fold -wn -s arquivo		# Quebra de linha a cada n linhas e somente onde tem espaço
+
 # Um bom método para deletar todo o conteúdo de um arquivo é usando cat /dev/null
 
 cat /dev/null > file		# Deleta o conteúdo de file e ainda preserva as pemissões do arquivo
@@ -76,7 +78,7 @@ cat file1 > file2		# file2 passa a ter exatamente o mesmo conteúdo de file1
 
 sudo rm file && touch file	# Remove file e cria um novo com o mesmo nome
 
-# O comando shred permite deletar arquivos de maneira segura
+# O comando shred permite deletar o conteúdo de arquivos de maneira segura
 
 sudo shred -vzn 0 /dir/file	# Método rápido. Irá sobrescrever file com 0s em uma única iteração
 
