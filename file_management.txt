@@ -85,3 +85,7 @@ sudo shred -vzn 0 /dir/file	# Método rápido. Irá sobrescrever file com 0s em 
 sudo shred -vzn 3 /dir/file	# O processo de "shreding" é repitido 3 vezes usando números aleatórios. Leva 4 vezes mais tempo em relação ao método rápido
 
 # A opção -z acima escreve zeros para esconder o processo de "shreding" no final
+
+kill IDx                    # "Mata" o processo com o ID IDx
+
+top                         # Mostra todos os processos. O ID esta na coluna "PID"
