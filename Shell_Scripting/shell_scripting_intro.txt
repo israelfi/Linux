@@ -1,0 +1,15 @@
+O que é o Shell?
+É um interpretador de linha de comando. Ele traduz os comandos do usuário para uma linguagem que é entedível pelo Kernel.
+
+O que é um Script do Shell?
+É uma lista de comandos que são executados em ordem.
+
+#! indica qual o interpretador a ser usado 
+
+#!/bin/sh
+
+Variável Local: Está presente na instância local do shell. Não está dispónivel para programas que não foram iniciados pelo shell.
+
+Variáveis de Ambiente: É disponível para qualquer processo "filho" do shell.
+
+Variáveis de Shell: Similar a variáveis globais. Algumas delas são locais e outras de ambiente.
