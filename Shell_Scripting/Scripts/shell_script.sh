@@ -1,3 +1,4 @@
+#!/bin/sh
 COUNT=0
 while [ $COUNT -lt 2 ]; do
 
