@@ -21,3 +21,8 @@ dirs				# Lista os diretórios salvos
 dirs -c				# Limpa a pilha
 
 # Para digitar um comando grande, uma ferramenta que pode ser bem útil é Ctrl x+e. O shell irá abrir o editor especificado por $EDITOR e lá você pode fazer o que quiser
+
+buyuo
+
+scp ~/catkin_ws/src/espeleo_locomotion/script/odom.py espeleo@172.22.121.112:/home/espeleo/catkin_ws/src/espeleo_return/scripts
+

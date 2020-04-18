@@ -1,0 +1,44 @@
+https://www.youtube.com/watch?v=GtovwKDemnI&t=857s
+Por que Linux?
+
+1) Open souce
+2) Acesso ao código fonte
+3) Muito seguro (é fácil de se identificar bugs)
+4) É rápido
+
+O que é Kernel?
+
+São os programas de computador que alocam os recursos do sistema e coordenam todos os detalhes do computador - "coração do computador". Usúarios se comunicam com o Kernel pelo shell.
+
+Comando essenciais
+
+cd
+pwd # Informa o qual é o diretório atual
+ls
+cp
+mv
+rv
+echo # Print
+cat # Concatenar
+less # Faz o mesmo que cat, mas abre uma nova do aba do terminal. Teclar Q para sair
+grep # Pega ("grab") um certo dado de algum arquivo ou comando
+mkdir
+touch # Cria diretórios rapidamente
+chmod
+man + help # Manual de comandos
+
+./programa.sh para rodar programa.sh 
+
+chmod ugo filename # u: usuário g: grupo do usuárop o: outros
+0 = nenhuma permissão
+1 = apenas executar (x)
+2 = apenas escrever (w)
+3 = 2+1 escrever e executar (w+x)
+4 = ler (r)
+5 = 4+1 ler e executar (r+x)
+6 = 4+2 ler e escrever (r+w)
+7 = 4+2+1 ler, escrever e executar (r+w+x)
+
+CLI (Comand Line Interface): Text based interface
+GUI (Graphic User Interface): Visual based interface
+
