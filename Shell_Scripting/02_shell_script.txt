@@ -1,0 +1,15 @@
+Operadores aritiméticos
++ - * / % = == !=
+
+Operadores relacionais
+-eq -ne -gt -lt -ge -le
+
+Operadores Booleanos
+! -o -a (not, or, and)
+
+Operadores de String
+= != -z (checa se o tamanho da sting é zero) -n (checa não é zero) str (checa se é não vazio)
+
+Operadores de teste de arquivos
+-b -c -d -f -g -k -p -t -u -r -w -x -s -e
+

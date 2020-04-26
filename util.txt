@@ -26,3 +26,7 @@ buyuo
 
 scp ~/catkin_ws/src/espeleo_locomotion/script/odom.py espeleo@172.22.121.112:/home/espeleo/catkin_ws/src/espeleo_return/scripts
 
+# Mudar brilho do monitor:
+xrandr | grep " connected" | cut -f1 -d " "
+monitor_name
+xrandr --output monitor_name --brightness 0.7 # vai de 0 a 1

@@ -1,0 +1,9 @@
+ Options 	 Description
+ -n 	 do not print the trailing newline.
+ -e 	 enable interpretation of backslash escapes.
+ \b 	 backspace
+ \\ 	 backslash
+ \n 	 new line
+ \r 	 carriage return
+ \t 	 horizontal tab
+ \v 	 vertical tab

@@ -13,3 +13,21 @@ Variável Local: Está presente na instância local do shell. Não está dispón
 Variáveis de Ambiente: É disponível para qualquer processo "filho" do shell.
 
 Variáveis de Shell: Similar a variáveis globais. Algumas delas são locais e outras de ambiente.
+
+variavel=valor # Sem espaços entre a variável, símbolo de igual e ao valor atribuido
+
+Variável escalar: armazena somente um valor por vez.
+
+$0 # Nome do script
+
+$1...9 # Argumentos passados ao chamar o script
+
+$# # Número de argumentos passados para o script
+
+$* # Todos os argumentos
+
+$@ # Todos os argumentos
+
+$? # Exit command 0 se o comando for rodado sem erros e 1 caso contrário
+
+$$
