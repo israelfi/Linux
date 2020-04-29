@@ -13,3 +13,6 @@ Operadores de String
 Operadores de teste de arquivos
 -b -c -d -f -g -k -p -t -u -r -w -x -s -e
 
+function name (){
+    list of commands
+}
