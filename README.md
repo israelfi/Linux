@@ -14,4 +14,4 @@ Feel free to use them as you want.
 
 ## Sources
 
-One of the sources that I used is the [Enki App](https://play.google.com/store/apps/details?id=com.enki.insights&hl).
+One of the sources that I used was [Enki App](https://play.google.com/store/apps/details?id=com.enki.insights&hl).
