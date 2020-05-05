@@ -89,3 +89,5 @@ sudo shred -vzn 3 /dir/file	# O processo de "shreding" é repitido 3 vezes usand
 kill IDx                    # "Mata" o processo com o ID IDx
 
 top                         # Mostra todos os processos. O ID esta na coluna "PID"
+
+wc -c "arquivo"             # Dá o tamanho do arquivo
